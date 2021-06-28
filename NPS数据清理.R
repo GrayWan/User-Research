@@ -12,7 +12,6 @@ q1 <- read_excel(ques_path)
 q1m <- data.frame(q1)
 q1m[q1m==-3] <- NA
 q1m[q1m=="(空)"] <- NA
-q1m[q1m=="NULLTYPE"] <- NA
 q2 <- as.tibble(q1m)
 
 ##调整NPS值
